@@ -5,7 +5,7 @@ agent any
 stages {
     stage('Clone') {
         steps {
-            git credentialsId: 'github', url: 'https://github.com/Lakshmikdev21/Java-Projects-Collections.git'
+            git branch: 'main', credentialsId: 'github', url: 'https://github.com/Lakshmikdev21/Java-Projects-Collections.git'
         }
     }
     stage('Build') {
